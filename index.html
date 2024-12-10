@@ -4,46 +4,47 @@
 <head>
     <title>HTML FORM</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 
 <body>
     <h1>Workshop #HTML - FORM</h1>
     <form>
-        <table>
+        <table class="center">
             <tr>
-                <td><label for="firstName">ชื่อ</label></td>
+                <td><label for="firstName" id="firstName-label">ชื่อ</label></td>
                 <td><input type="text" id="firstName" name="firstName"></td>
             </tr>
             <tr>
-                <td><label for="lastName">สกุล</label></td>
+                <td><label for="lastName" id="lastName-label">สกุล</label></td>
                 <td><input type="text" id="lastName" name="lastName"></td>
             </tr>
             <tr>
-                <td><label for="birthDate">วัน/เดือน/ปีเกิด</label></td>
+                <td><label for="birthDate" id="birthDate-label">วัน/เดือน/ปีเกิด</label></td>
                 <td><input type="date" id="birthDate" name="birthDate"></td>
             </tr>
             <tr>
-                <td><label for="age">อายุ</label></td>
+                <td><label for="age" id="age-label">อายุ</label></td>
                 <td><input type="number" id="age" name="age"></td>
             </tr>
             <tr>
-                <td><label for="gender">เพศ</label></td>
+                <td><label for="gender" id="gender-label">เพศ</label></td>
                 <td><input type="radio" id="male" name="gender" value="male">
-                    <label for="male">ชาย</label>
+                    <label for="male" class="genderRad-label">ชาย</label>
                     <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">หญิง</label>
+                    <label for="female" class="genderRad-label">หญิง</label>
                 </td>
             </tr>
             <tr>
-                <td><label for="picture">รูป</label></td>
+                <td><label for="picture" id="picture-label">รูป</label></td>
                 <td><input type="file" id="picture" name="picture"></td>
             </tr>
             <tr>
-                <td><label for="address">ที่อยู่</label></td>
+                <td><label for="address" id="address-label">ที่อยู่</label></td>
                 <td><textarea rows="6" cols="25" id="address" name="address"></textarea></td>
             </tr>
             <tr>
-                <td><label for="favColor">สีที่ชอบ</label></td>
+                <td><label for="favColor" id="favColor-label">สีที่ชอบ</label></td>
                 <td><select size="1" id="favColor" name="favColor">
                         <option value="red">สีแดง</option>
                         <option value="yellow">สีเหลือง</option>
@@ -53,18 +54,18 @@
                     </select></td>
             </tr>
             <tr>
-                <td><label for="favMusic">แนวเพลงที่ชอบ</label></td>
+                <td><label for="favMusic" id="favMusic-label">แนวเพลงที่ชอบ</label></td>
                 <td><input type="radio" id="forLife" name="favMusic" value="forLife">
-                    <label for>เพื่อชีวิต</label>
+                    <label for class="favMusicRad-label">เพื่อชีวิต</label>
                     <input type="radio" id="country" name="favMusic" value="country">
-                    <label for="country">ลูกทุ่ง</label>
+                    <label for="country" class="favMusicRad-label">ลูกทุ่ง</label>
                     <input type="radio" id="other" name="favMusic" value="other">
-                    <label for="other">อื่นๆ</label>
+                    <label for="other" class="favMusicRad-label">อื่นๆ</label>
                 </td>
             </tr>
             <tr>
                 <td><br><input type="checkbox" id="agreement" name="agreement" value="agree">
-                    <label for="agreement">ยินยอมให้เก็บข้อมูล</label>
+                    <label for="agreement" id="agreement-label">ยินยอมให้เก็บข้อมูล</label>
                 </td>
             </tr>
             <tr>

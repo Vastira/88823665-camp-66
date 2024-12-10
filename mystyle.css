@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    background-color: rgb(235, 234, 234);
+    font-family: "Sarabun", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 135, 135);
+    border-radius: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 345px;
+    margin-right: 345px;
+}
+
+h1:hover {
+    color: rgb(0, 135, 135);
+    background-color: white;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#firstName-label:hover {
+    color: rgb(0, 135, 135);
+}
+
+#firstName {
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    border-color: darkgray;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+#firstName:hover {
+    background-color:lightgrey;
+    border-color: rgb(0, 135, 135);
+    outline: none;
+}
+
+#firstName:focus {
+    border-color: rgb(0, 135, 135);
+    outline: none;
+}
+
+#lastName-label:hover {
+    color: rgb(0, 135, 135);
+}
+
+#lastName {
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    border-color: darkgray;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+#lastName:hover {
+    background-color:lightgrey;
+    border-color: rgb(0, 135, 135);
+    outline: none;
+}
+
+#lastName:focus {
+    border-color: rgb(0, 135, 135);
+    outline: none;
+}
+
+#birthDate-label:hover {
+    color: rgb(0, 135, 135);
+}
+
+#birthDate {
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    border-color: darkgray;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+#birthDate:hover {
+    background-color:lightgrey;
+    border-color: rgb(0, 135, 135);
+    outline: none;
+}
+
+#birthDate:focus-within {
+    border-color: rgb(0, 135, 135);
+    outline: none;
+}
+
+#age-label:hover {
+    color: rgb(0, 135, 135);
+}
+
+#age {
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    border-color: darkgray;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+#age:hover {
+    background-color:lightgrey;
+    border-color: rgb(0, 135, 135);
+    outline: none;
+}
+
+#age:focus {
+    border-color: rgb(0, 135, 135);
+    outline: none;
+}
+
+.genderRad-label {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+#gender-label:hover {
+    color: rgb(0, 135, 135);
+}
+
+#picture-label:hover {
+    color: rgb(0, 135, 135);
+}
+
+#address-label:hover {
+    color: rgb(0, 135, 135);
+}
+
+#address {
+    border-radius: 6px;
+    border-width: 2.5px;
+    border-color: darkgray;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+#address:hover {
+    background-color:lightgrey;
+    border-color: rgb(0, 135, 135);
+    outline: none;
+}
+
+#address:focus {
+    border-color: rgb(0, 135, 135);
+    outline: none;
+}
+
+#favColor {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    border-color: darkgray;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+#favColor:hover {
+    background-color:lightgrey;
+    border-color: rgb(0, 135, 135);
+    outline: none;
+}
+
+#favColor:focus {
+    border-color: rgb(0, 135, 135);
+    outline: none;
+}
+
+#favColor-label:hover {
+    color: rgb(0, 135, 135);
+}
+
+.favMusicRad-label {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+#favMusic-label:hover {
+    color: rgb(0, 135, 135);
+}
+#agreement-label:hover {
+    color: rgb(0, 135, 135);
+}
