@@ -6,6 +6,7 @@ use App\Http\Controllers\MulTableController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 
 /* Route::get('/', function () {
     return view('welcome');
@@ -37,8 +38,22 @@ Route::get('/login',
 Route::get('/register',
     [RegisterController::class,'index']);
 
+Route::post('/register',
+    [RegisterController::class,'create']);
+
 Route::get('/home',
     [HomeController::class,'index']);
 
 Route::get('/',
     [HomeController::class,'index']);
+
+Route::get('/user',
+    [UserController::class,'index']);
+Route::get('/user/{id}',
+    [UserController::class,'edit']);
+Route::put('/user',
+    [UserController::class,'edit_action']);
+Route::get('/user/delete{id}',
+    [UserController::class,'delete']);
+Route::delete('/user',
+    [UserController::class,'delete']);
