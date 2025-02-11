@@ -10,7 +10,7 @@
     <div class="card">
       <div class="card-body register-card-body">
         <p class="register-box-msg">Register a new membership</p>
-        <form action="{{ url('register') }}" onsubmit="return clickme()" method="post">
+        <form action="{{ url('register') }}" onsubmit="return validate()" method="post">
           @csrf
           <div class="input-group mb-3">
             <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" />
@@ -60,7 +60,7 @@
             <!-- /.col -->
             <div class="col-4">
               <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-primary" onclick="clickme()">Sign In</button>
+                <button type="submit" class="btn btn-primary" onclick="validate()">Sign In</button>
               </div>
             </div>
             <!-- /.col -->
@@ -103,7 +103,7 @@
     for(a=1; a<10 ; a++){
       console.log(a);
     } */
-    function clickme(){
+    function validate(){
       /* let name = document.getElementById('name')
       let email = document.getElementById('email')
       let password = document.getElementById('pass')

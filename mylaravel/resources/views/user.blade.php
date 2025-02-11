@@ -30,11 +30,11 @@
                       <a href="{{url('/user/'.$user->id)}}">
                         <button class="btn btn-warning">Edit</button>
                       </a>
-                      <form action="{{url('/user')}}" method="post" style="display: inline;">
+                      <form action="{{url('/user')}}" onclick="return confirmDelete(this)" method="post" style="display: inline;">
                       @csrf
                       @method('delete')
                         <input type="hidden" name="id" value="{{ $user->id }}">
-                        <button type="submit" class="btn btn-danger">Delete</button>
+                        <button type="submit" class="btn btn-danger" >Delete</button>
                       </form>
                     </td>
                   </tr>
@@ -53,7 +53,7 @@
 
 @section('scripts')
   <script>
-    function confirmDelete(){
+    function confirmDelete(form){
       const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
           confirmButton: "btn btn-success",
@@ -76,6 +76,7 @@
             text: "This user has been deleted.",
             icon: "success"
           });
+          form.submit();
         } else if (
           /* Read more about handling dismissals below */
           result.dismiss === Swal.DismissReason.cancel
@@ -87,6 +88,7 @@
           });
         }
       });
+      return false;
     }  
   </script>
 @endsection  
