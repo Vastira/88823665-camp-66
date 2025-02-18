@@ -10,24 +10,13 @@
         <div class="card">
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Sign in to start your session</p>
-                <?php
-                    $error = session()->get('error');
-                    if($error){
-                ?>
-                <div class="text-danger">
-                    {{ $error }}
-                </div>
-                <?php
-                    }
-                ?>
-                <form action="{{ url('/login') }}" method="post">
-                    @csrf
+                <form action="../index3.html" method="post">
                     <div class="input-group mb-3">
-                        <input type="email" name="email" value="{{ isset($email) ? $email : "" }}" class="form-control" placeholder="Email" />
+                        <input type="email" class="form-control" placeholder="Email" />
                         <div class="input-group-text"><span class="bi bi-envelope"></span></div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" name="password" class="form-control" placeholder="Password" />
+                        <input type="password" class="form-control" placeholder="Password" />
                         <div class="input-group-text"><span class="bi bi-lock-fill"></span></div>
                     </div>
                     <!--begin::Row-->
